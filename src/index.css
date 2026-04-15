@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --color-bg: #050505;
+  --color-accent: #8E2DE2;
+  --color-accent-light: #4A00E0;
+  --color-text-dim: rgba(255, 255, 255, 0.6);
+  --color-glass: rgba(255, 255, 255, 0.05);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+@layer base {
+  body {
+    @apply antialiased bg-bg text-white overflow-x-hidden;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-glass border border-glass-border backdrop-blur-xl;
+  }
+  
+  .btn-gradient {
+    @apply bg-gradient-to-r from-accent to-accent-light text-white font-bold transition-all hover:opacity-90 active:scale-95;
+  }
+
+  .text-huge {
+    @apply text-[15vw] sm:text-[80px] md:text-[110px] leading-[0.9] font-extrabold tracking-[-0.04em] uppercase;
+  }
+}

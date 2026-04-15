@@ -1,0 +1,6 @@
+{
+  "name": "Gemini Photo Editor",
+  "description": "AI-powered photo editing for changing clothes, backgrounds, and merging images realistically using Gemini.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
